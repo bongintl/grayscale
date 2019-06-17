@@ -1,0 +1,97 @@
+@import 'breakpoints';
+
+$gradient-width: 15px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ccc;
+}
+
+.gradient {
+    background: linear-gradient(to bottom, black 0%, white 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: $gradient-width;
+    height: 100%;
+}
+
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: $gradient-width;
+    right: 0;
+    bottom: 0;
+}
+
+.lines-layer {
+    pointer-events: none;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.image-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.img-small {
+    position: fixed;
+    top: 0;
+    left: $gradient-width;
+    width: 500px;
+    height: 500px;
+}
+
+.center-right {
+    
+    position: fixed;
+    top: 0%;
+    left: $gradient-width;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.logo {
+    position: fixed;
+    left: $gradient-width * 2;
+    right: $gradient-width;
+    top: $gradient-width;
+    height: calc( ( 100vw - #{ $gradient-width * 3 } ) * .09 );
+    z-index: 100;
+}
+
+.copy {
+    position: fixed;
+    z-index: 100;
+    left: $gradient-width * 2;
+    right: $gradient-width;
+    bottom: $gradient-width;
+    height: calc( ( 100vw - #{ $gradient-width * 3 } ) * 0.719 );
+    
+    @include tablet {
+        
+        left: auto;
+        width: 280px;
+        height: 200px;
+        
+    }
+    
+    // height: 200px;
+    // width: 280px;
+    // bottom: $gradient-width;
+    // right: $gradient-width;
+}

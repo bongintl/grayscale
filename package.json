@@ -1,0 +1,25 @@
+{
+  "name": "bong-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^14.0.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-streamify": "^1.0.2",
+    "gulp-uglify": "^2.0.1",
+    "gulp-util": "^3.0.8",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.9.0"
+  },
+  "dependencies": {
+    "eases": "^1.0.8"
+  }
+}
